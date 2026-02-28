@@ -1,0 +1,112 @@
+.amatic-sc-regular {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.amatic-sc-bold {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reenie-beanie-regular {
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.molle-regular-italic {
+  font-family: "Molle", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+.hero {
+    background-color: #f4efe9; /* soft beige */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-container {
+    padding: 0%;
+    margin: 0%;
+    width:90%;
+    position: relative;
+}
+
+/* BIG BACKGROUND NAME */
+.bg-name {
+    font-family: 'Molle', cursive;
+    font-size: 240px;
+    color: #f48fb1; /* soft pink */
+    opacity: 0.9;
+    line-height: 0.8;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.sayee{
+    top: 1%;
+}
+
+.deshmukh{
+    top: 90%;
+    left: 20%;
+    
+}
+
+/* TEXT CONTENT */
+.hero-content {
+    position: relative;
+    z-index: 3;
+}
+
+.small-text {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 46px;
+    color: #333;
+}
+
+.intro-text {
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    margin: 0;
+}
+
+.main-name {
+    font-family: 'Molle', cursive;
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.subtitle {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+.hero-image {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.hero-image img {
+    width: 300px;
+    border-radius: 10px;
+}
