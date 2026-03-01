@@ -3,120 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sayee | Portfolio</title>
-
+    <title>Sayee Deshmukh | Portfolio</title>
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cedarville+Cursive&family=Reenie+Beanie&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cedarville+Cursive&family=Reenie+Beanie&family=Kalam:wght@300;400;700&family=Poppins:wght@300;400;600;700&family=Molle:ital@1&display=swap" rel="stylesheet">
+    
     <!-- CSS -->
     <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
+    <div class="portfolio-container">
+        
+        <!-- Section 1: Header/Introduction -->
+        <section class="section header-section">
+            <div class="header-content">
+                <div class="bg-names-container">
+                    <h1 class="bg-name-overlay bg-name-top">Sayee</h1>
+                    <h1 class="bg-name-overlay bg-name-bottom">Deshmukh</h1>
+                </div>
+                <p class="casual-text">Hi. Since you're new here,<br>let me be your guide.</p>
+                <h2 class="main-name">This is <span class="pink-text">Sayee.</span></h2>
+                <div class="header-image">
+                    <img src="Portfolio_photo-removebg-preview.png" alt="Sayee Joshi">
+                </div>
+                <div class="header-titles">
+                    <span class="title-left">Frontend Developer | Creative Thinker</span>
+                </div>
+                <div class="intro-paragraph">
+                    <p>I design and build thoughtful web experiences that blend logic with aesthetics. Currently pursuing B.Tech in Artificial Intelligence & Machine Learning, with a strong focus on frontend development and user-centric design.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- HERO -->
-    <section class="hero">
-    <div class="hero-container">
+        <!-- Section 2: About Me/Journey -->
+        <section class="section journey-section">
+            <div class="journey-content">
+                <h2 class="journey-title">How it started.</h2>
+                <p class="journey-text">
+                    Curious, observant, and always experimenting with design. I began exploring web development during my first year of engineering.
+                </p>
+                <p class="journey-text-2">
+                    From building simple HTML pages to developing full-stack Django and MERN applications — every project taught me how visuals and logic work together.
+                </p>
+                <p class="journey-text-3">Now, I create interfaces that are:</p>
+                <ul class="journey-list">
+                    <li>Clean</li>
+                    <li>Responsive</li>
+                    <li>User-focused</li>
+                    <li>Minimal but expressive</li>
+                </ul>
+            </div>
+        </section>
 
-        <h1 class="bg-name sayee">Sayee</h1>
-        <h1 class="bg-name deshmukh">deshmukh</h1>
-
-        <div class="hero-content">
-            <p class="small-text">
-                Hi. Since you're new here,<br>
-                let me be your guide.
+        <!-- Section 3: What I Do -->
+        <section class="section what-i-do-section">
+            <h2 class="what-i-do-title">It's not just coding,<br>it's building experiences.</h2>
+            <p class="what-i-do-text">
+                I love connecting creativity with technology. Whether it's a decision-making app, a bookstore system, or a UI prototype — I focus on clarity, usability, and structure.
             </p>
+        </section>
 
-            <h2 class="intro-text">
-                This is
-            </h2>
+        <!-- Section 4: Skills -->
+        <section class="section skills-section">
+            <h2 class="skills-main-title">Skills & Tools</h2>
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h3 class="category-title">🖥 Frontend</h3>
+                    <ul class="skill-items">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>React</li>
+                        <li>React + Vite</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">⚙ Backend</h3>
+                    <ul class="skill-items">
+                        <li>Django</li>
+                        <li>Node.js (Basics)</li>
+                        <li>Express</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">🗄 Database</h3>
+                    <ul class="skill-items">
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">🤖 AI & ML</h3>
+                    <ul class="skill-items">
+                        <li>Scikit-learn</li>
+                        <li>TensorFlow</li>
+                        <li>Data Preprocessing</li>
+                        <li>NLP (NLTK Basics)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">🎨 Other</h3>
+                    <ul class="skill-items">
+                        <li>Git & GitHub</li>
+                        <li>Canva</li>
+                        <li>UI Wireframing</li>
+                        <li>Basic Figma</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
+        <!-- Section 5: Project Highlights -->
+        <section class="section projects-section">
+            <h2 class="projects-title">Project Highlights</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3 class="project-name">Orica</h3>
+                    <p class="project-desc">AI-based decision making web app built using MERN stack.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3 class="project-name">Bookstore Management System</h3>
+                    <p class="project-desc">Django-based CRUD application with authentication and session cart.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3 class="project-name">Gold Price Prediction App</h3>
+                    <p class="project-desc">Machine learning + Django UI with visualization.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3 class="project-name">Type Yatra</h3>
+                    <p class="project-desc">Interactive typing learning platform.</p>
+                </div>
+            </div>
+        </section>
 
-            <p class="subtitle">
-                Frontend Developer | AIML Student | Creative Thinker
-            </p>
-        </div>
+        <!-- Section 6: Spacer/Additional Content -->
+        <section class="section spacer-section"></section>
 
-        <div class="hero-image">
-            <img src="Portfolio_photo-removebg-preview.png" alt="Sayee">
-        </div>
+        <!-- Section 7: Additional Content Area -->
+        <section class="section additional-section"></section>
+
+        <!-- Section 8: Additional Content Area -->
+        <section class="section additional-section-2"></section>
+
+        <!-- Section 9: Conclusion/Contact -->
+        <section class="section contact-section">
+            <h2 class="wrap-title">and that's a wrap.</h2>
+            <p class="contact-intro">Thanks for stopping by.<br>Let's build something meaningful together.</p>
+            <div class="contact-info">
+                <a href="mailto:sayee@email.com" class="contact-link">📧 sayee@email.com</a>
+                <a href="https://github.com/yourusername" class="contact-link" target="_blank">🔗 github.com/yourusername</a>
+                <a href="https://linkedin.com/in/yourusername" class="contact-link" target="_blank">🔗 linkedin.com/in/yourusername</a>
+            </div>
+        </section>
 
     </div>
-</section>
 
-
-    <!-- ABOUT -->
-    <section class="about">
-        <h2 class="amatic-sc-regular">How it started.</h2>
-
-        <p>
-            Curious and creative, I began exploring web development during my engineering journey.
-            From simple HTML pages to full-stack applications, I’ve learned how logic and design
-            come together to create meaningful experiences.
-        </p>
-    </section>
-
-
-    <!-- WHAT I DO -->
-    <section class="statement">
-        <h2 class="amatic-sc-bold">
-            It’s not just coding,<br> it’s building experiences.
-        </h2>
-
-        <p>
-            I design clean, aesthetic interfaces that prioritize usability,
-            structure, and thoughtful interaction.
-        </p>
-    </section>
-
-
-    <!-- SKILLS -->
-    <section class="skills">
-        <h2 class="amatic-sc-regular">Skills & Tools</h2>
-
-        <div class="skill-grid">
-
-            <div>
-                <h3 class="cedarville-cursive-regular">Frontend</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>React</li>
-                    <li>Bootstrap</li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="cedarville-cursive-regular">Backend</h3>
-                <ul>
-                    <li>Django</li>
-                    <li>Node.js</li>
-                    <li>Express</li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="cedarville-cursive-regular">Database</h3>
-                <ul>
-                    <li>MySQL</li>
-                    <li>MongoDB</li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- CONTACT -->
-    <section class="contact">
-        <h2 class="amatic-sc-bold">and that’s a wrap.</h2>
-
-        <p class="reenie-beanie-regular">
-            Thanks for stopping by. Let’s build something meaningful together.
-        </p>
-    </section>
-
+    <script src="script.js"></script>
 </body>
 </html>
