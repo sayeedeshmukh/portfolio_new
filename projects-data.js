@@ -18,12 +18,12 @@ const PROJECTS_DATA = {
     website: "https://diarysay.netlify.app/",
     github: "https://github.com/sayeedeshmukh/blogsay"
   },
-  "gold-prediction": {
-    name: "Gold Price Prediction App",
-    description: "Machine learning + Django UI with visualization.",
-    whatItIs: "A full-stack application that predicts gold prices using machine learning models. The Django backend serves predictions, and the UI displays interactive visualizations to help users understand trends and forecast results.",
+  "virtual-labs": {
+    name: "Virtual Labs",
+    description: "An Interactive learning platform designed to make technical concepts more accessible and engaging.",
+    whatItIs: "It provides a structured environment where students can explore and practice topics like Data Structures through guided simulations and hands-on experimentation. The goal of this project was to create a simple, intuitive interface that supports self-paced learning while making complex topics feel less intimidating. With a clean design and focused structure, Virtual Labs encourages learners to understand concepts not just theoretically, but practically.",
     screenshots: [],
-    whyBuilt: "This project bridges my AI/ML coursework with web development. I wanted to build something that demonstrates how ML models can be deployed in a real web application with a clear, visual interface.",
+    whyBuilt: "I’ve often felt that learning technical subjects can become too theoretical and overwhelming. Sometimes, you understand the concept on paper — but not how it actually works. I wanted to create a space where students could explore topics like Data Structures in a more interactive and less intimidating way. A place where learning feels guided, structured, and practical rather than rushed or confusing. This project reflects my belief that technology should simplify learning — not complicate it.",
     website: "https://gold-prediction.example.com",
     github: "https://github.com/yourusername/gold-prediction"
   },
