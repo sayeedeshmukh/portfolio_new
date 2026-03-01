@@ -24,6 +24,17 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
     
+    // Project cards: click opens website, GitHub CTA opens GitHub
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', function(e) {
+            if (e.target.closest('.project-github-cta') || e.target.closest('.know-more-link')) return;
+            const website = this.dataset.website;
+            if (website) window.open(website, '_blank', 'noopener,noreferrer');
+        });
+    });
+    
     // Add hover effects to interactive elements
     const contactLinks = document.querySelectorAll('.contact-link');
     contactLinks.forEach(link => {
@@ -55,4 +66,3 @@ document.addEventListener('DOMContentLoaded', function() {
         chartObserver.observe(bar);
     });
 });
-
