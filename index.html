@@ -102,10 +102,14 @@
             </div>
         </section>
 
-        <!-- Section 5: Project Highlights -->
+        <!-- Section 5: Project & Creative Highlights -->
         <section id="projects" class="section projects-section">
+            <div class="section-toggle">
+                <button type="button" class="toggle-btn active" data-tab="projects">Projects</button>
+                <button type="button" class="toggle-btn" data-tab="creative">Creative & Design</button>
+            </div>
             <h2 class="projects-title">Project Highlights</h2>
-            <div class="projects-grid">
+            <div id="projects-panel" class="toggle-panel projects-grid">
                 <div class="project-card" data-website="https://oricaa.netlify.app/" data-github="https://github.com/yourusername/orica">
                     <div class="project-image">
                         <img src="Orica.png" alt="Orica">
@@ -122,12 +126,6 @@
                     <p class="project-desc">Minimal digital journaling web app designed for emotional reflection and mood tracking. <a href="project.html?id=diary-say" class="know-more-link">Know more...</a></p>
                     <a href="https://github.com/sayeedeshmukh/blogsay" class="project-github-cta" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
                 </div>
-                <div class="project-card" data-website="https://gold-prediction.example.com" data-github="https://github.com/yourusername/gold-prediction">
-                    <div class="project-image"></div>
-                    <h3 class="project-name">Gold Price Prediction App</h3>
-                    <p class="project-desc">Machine learning + Django UI with visualization. <a href="project.html?id=gold-prediction" class="know-more-link">Know more...</a></p>
-                    <a href="https://github.com/yourusername/gold-prediction" class="project-github-cta" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
-                </div>
                 <div class="project-card" data-website="https://typeyatra.netlify.app/" data-github="https://github.com/yourusername/type-yatra">
                     <div class="project-image">
                         <img src="typeyatra.png" alt="type yatra">
@@ -136,6 +134,35 @@
                     <p class="project-desc">Interactive typing learning platform. <a href="project.html?id=type-yatra" class="know-more-link">Know more...</a></p>
                     <a href="https://github.com/sayeedeshmukh/type-yatra" class="project-github-cta" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
                 </div>
+            </div>
+            <h2 id="creative-title" class="projects-title" style="display: none;">Illustrations and Designing</h2>
+            <div id="creative-panel" class="toggle-panel creative-grid" style="display: none;">
+                <div class="project-card creative-card" data-link="">
+                    <div class="creative-image">
+                        <img src="doggie.jpg" alt="">
+                    </div>
+                    <h3 class="project-name">Doggie</h3>
+                </div>
+                <div class="project-card creative-card" data-link="">
+                    <div class="creative-image">
+                        <img src="sheru.jpg" alt="">
+                    </div>
+                    <h3 class="project-name">Sher Khan</h3>
+                </div>
+                <div class="project-card creative-card" data-link="">
+                    <div class="creative-image">
+                        <img src="metro.png" alt="">
+                    </div>
+                    <h3 class="project-name">Metro Train</h3>
+                </div>
+                <div class="project-card creative-card" data-link="">
+                    <div class="creative-image">
+                        <img src="printables.png" alt="">
+                    </div>
+                    <h3 class="project-name">Graphics</h3>
+                    <a href="https://www.canva.com/design/DAG238IIJ7w/myH-MkLNg2-0qIutJUuJYw/view?utm_content=DAG238IIJ7w&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6d2af7e858" class="project-github-cta project-link-cta">View work →</a>
+                </div>
+                
             </div>
         </section>
 

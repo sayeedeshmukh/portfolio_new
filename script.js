@@ -24,14 +24,52 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
     
+    // Toggle: Projects / Creative
+    const toggleBtns = document.querySelectorAll('.toggle-btn');
+    const projectsPanel = document.getElementById('projects-panel');
+    const projectsTitle = document.querySelector('.projects-section .projects-title');
+    const creativePanel = document.getElementById('creative-panel');
+    const creativeTitle = document.getElementById('creative-title');
+
+    toggleBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const tab = this.dataset.tab;
+            toggleBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+
+            if (tab === 'projects') {
+                projectsPanel.style.display = '';
+                projectsTitle.style.display = '';
+                creativePanel.style.display = 'none';
+                creativeTitle.style.display = 'none';
+            } else {
+                projectsPanel.style.display = 'none';
+                projectsTitle.style.display = 'none';
+                creativePanel.style.display = '';
+                creativeTitle.style.display = '';
+            }
+        });
+    });
+
     // Project cards: click opens website, GitHub CTA opens GitHub
-    const projectCards = document.querySelectorAll('.project-card');
+    const projectCards = document.querySelectorAll('.project-card:not(.creative-card)');
     projectCards.forEach(card => {
         card.style.cursor = 'pointer';
         card.addEventListener('click', function(e) {
             if (e.target.closest('.project-github-cta') || e.target.closest('.know-more-link')) return;
             const website = this.dataset.website;
             if (website) window.open(website, '_blank', 'noopener,noreferrer');
+        });
+    });
+
+    // Creative cards: click opens link if set
+    const creativeCards = document.querySelectorAll('.creative-card');
+    creativeCards.forEach(card => {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', function(e) {
+            if (e.target.closest('.project-link-cta') || e.target.closest('.know-more-link')) return;
+            const link = this.dataset.link;
+            if (link) window.open(link, '_blank', 'noopener,noreferrer');
         });
     });
     
