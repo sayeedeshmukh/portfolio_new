@@ -24,8 +24,8 @@ const PROJECTS_DATA = {
     whatItIs: "It provides a structured environment where students can explore and practice topics like Data Structures through guided simulations and hands-on experimentation. The goal of this project was to create a simple, intuitive interface that supports self-paced learning while making complex topics feel less intimidating. With a clean design and focused structure, Virtual Labs encourages learners to understand concepts not just theoretically, but practically.",
     screenshots: [],
     whyBuilt: "I’ve often felt that learning technical subjects can become too theoretical and overwhelming. Sometimes, you understand the concept on paper — but not how it actually works. I wanted to create a space where students could explore topics like Data Structures in a more interactive and less intimidating way. A place where learning feels guided, structured, and practical rather than rushed or confusing. This project reflects my belief that technology should simplify learning — not complicate it.",
-    website: "https://gold-prediction.example.com",
-    github: "https://github.com/yourusername/gold-prediction"
+    website: "https://virtualabss.netlify.app/",
+    github: "https://github.com/sayeedeshmukh/virtual-labs"
   },
   "type-yatra": {
     name: "Type Yatra",
