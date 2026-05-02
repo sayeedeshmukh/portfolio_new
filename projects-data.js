@@ -35,5 +35,14 @@ const PROJECTS_DATA = {
     whyBuilt: "I built Type Yatra to address the importance of typing efficiency in today’s digital world. Many students and professionals struggle with speed and accuracy due to lack of structured practice. I wanted to create a platform that makes typing practice interactive and measurable. This project also helped me understand user engagement, real-time feedback systems, and interface clarity in learning applications.",
     website: "https://typeyatra.netlify.app/",
     github: "https://github.com/sayeedeshmukh/type-yatra"
+  },
+  blubble: {
+    name: "Blubble",
+    description: "Interactive web app where users create and animate custom floating creatures using a built-in drawing tool.",
+    whatItIs: "Blubble is an interactive web app where users create and animate custom floating creatures using a built-in drawing tool. It focuses on creativity and engaging user experience by allowing users to draw and bring to life their own unique blubbles.",
+    screenshots: ["blubble.png"],
+    whyBuilt: "I wanted to create an interactive drawing platform that feels alive. It combines creative tools with engaging animations, offering a playful and dynamic user experience.",
+    website: "https://blubble.netlify.app/",
+    github: "https://github.com/sayeedeshmukh/blubble"
   }
 };
