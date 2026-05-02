@@ -26,10 +26,41 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Toggle: Projects / Creative
     const toggleBtns = document.querySelectorAll('.toggle-btn');
-    const projectsPanel = document.getElementById('projects-panel');
+    const projectsContainer = document.getElementById('projects-container');
     const projectsTitle = document.querySelector('.projects-section .projects-title');
     const creativePanel = document.getElementById('creative-panel');
     const creativeTitle = document.getElementById('creative-title');
+
+    // Slider variables
+    const projectsGrid = document.getElementById('projects-panel');
+    const prevBtn = document.getElementById('projects-prev');
+    const nextBtn = document.getElementById('projects-next');
+
+    function updateSliderButtons() {
+        if (!projectsGrid || !prevBtn || !nextBtn) return;
+        if (projectsGrid.scrollWidth > projectsGrid.clientWidth) {
+            prevBtn.style.display = 'flex';
+            nextBtn.style.display = 'flex';
+        } else {
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'none';
+        }
+    }
+
+    if (prevBtn && nextBtn && projectsGrid) {
+        prevBtn.addEventListener('click', () => {
+            const cardWidth = projectsGrid.querySelector('.project-card').offsetWidth + 20;
+            projectsGrid.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            const cardWidth = projectsGrid.querySelector('.project-card').offsetWidth + 20;
+            projectsGrid.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        });
+
+        window.addEventListener('resize', updateSliderButtons);
+        setTimeout(updateSliderButtons, 100);
+    }
 
     toggleBtns.forEach(btn => {
         btn.addEventListener('click', function() {
@@ -38,12 +69,13 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.add('active');
 
             if (tab === 'projects') {
-                projectsPanel.style.display = '';
+                projectsContainer.style.display = '';
                 projectsTitle.style.display = '';
                 creativePanel.style.display = 'none';
                 creativeTitle.style.display = 'none';
+                setTimeout(updateSliderButtons, 50);
             } else {
-                projectsPanel.style.display = 'none';
+                projectsContainer.style.display = 'none';
                 projectsTitle.style.display = 'none';
                 creativePanel.style.display = '';
                 creativeTitle.style.display = '';
