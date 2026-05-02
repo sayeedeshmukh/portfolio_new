@@ -603,6 +603,12 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 1400px) {
+    .title-left {
+        margin-left: 350px;
+    }
+}
+
 @media (max-width: 1200px) {
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
@@ -650,6 +656,62 @@ body {
     .bg-name-bottom {
         margin-left: 50px;
     }
+    
+    .title-left {
+        margin-left: 250px;
+    }
+    
+    .header-image {
+        right: 5%;
+    }
+    
+    .intro-paragraph {
+        width: 60%;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .header-image {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        margin: 30px 0;
+    }
+    
+    .header-titles {
+        position: relative;
+        bottom: auto;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .title-left {
+        position: relative;
+        margin-left: 0;
+        top: auto;
+    }
+    
+    .intro-paragraph {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .bg-names-container {
+        top: 30%;
+        left: 50%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -661,6 +723,7 @@ body {
     
     .section {
         grid-column: 1 !important;
+        padding: 20px;
     }
     
     .bg-name-overlay {
@@ -670,20 +733,29 @@ body {
     
     .bg-name-bottom {
         margin-left: 30px;
+        margin-top: 60px;
     }
     
     .main-name {
         font-size: 60px;
+        margin: 10px 0;
+    }
+    
+    .casual-text {
+        font-size: 28px;
     }
     
     .header-image img {
-        width: 200px;
+        width: 250px;
     }
     
     .intro-paragraph {
         width: 100%;
-        position: relative;
-        margin-top: 20px;
+        padding: 15px;
+    }
+    
+    .journey-title {
+        font-size: 36px;
     }
     
     .skills-main-title {
@@ -698,6 +770,10 @@ body {
         flex: 0 0 100%;
     }
     
+    .projects-title {
+        font-size: 42px;
+    }
+    
     .what-i-do-title {
         font-size: 32px;
     }
@@ -709,5 +785,60 @@ body {
     .contact-info {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+    }
+    
+    .contact-link {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .bg-name-overlay {
+        font-size: 70px;
+    }
+    
+    .bg-name-bottom {
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+    
+    .main-name {
+        font-size: 48px;
+    }
+    
+    .casual-text {
+        font-size: 22px;
+    }
+    
+    .header-image img {
+        width: 200px;
+    }
+    
+    .title-left {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    
+    .intro-paragraph p {
+        font-size: 13px;
+    }
+    
+    .skills-main-title {
+        font-size: 36px;
+    }
+    
+    .what-i-do-title {
+        font-size: 26px;
+    }
+    
+    .wrap-title {
+        font-size: 28px;
+    }
+    
+    .contact-link {
+        font-size: 14px;
+        padding: 10px;
     }
 }
