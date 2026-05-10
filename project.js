@@ -31,11 +31,28 @@ document.addEventListener('DOMContentLoaded', function() {
     <h3 class="section-title">What it is</h3>
     <p class="section-content">${p.whatItIs}</p>
 
+    ${p.detailedFeatures ? `
+      <h3 class="section-title">Detailed Features</h3>
+      <p class="section-content">${p.detailedFeatures}</p>
+    ` : ''}
+
+    ${p.techStack && p.techStack.length > 0 ? `
+      <h3 class="section-title">Tech Stack</h3>
+      <div class="tech-stack-container">
+        ${p.techStack.map(tech => `<span class="tech-pill">${tech}</span>`).join('')}
+      </div>
+    ` : ''}
+
     <h3 class="section-title">Screenshots</h3>
     <div class="project-screenshots">${screenshotsHtml}</div>
 
     <h3 class="section-title">Why I built it</h3>
     <p class="section-content">${p.whyBuilt}</p>
+
+    ${p.experienceBuilding ? `
+      <h3 class="section-title">Experience Building</h3>
+      <p class="section-content">${p.experienceBuilding}</p>
+    ` : ''}
 
     <div class="project-ctas">
       ${p.website ? `<a href="${p.website}" target="_blank" rel="noopener noreferrer">Visit live site →</a>` : ''}
