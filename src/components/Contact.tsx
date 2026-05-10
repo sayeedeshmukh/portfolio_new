@@ -81,7 +81,7 @@ export default function Contact() {
         </motion.div>
         
         <div className="mt-16 text-neutral-400 text-sm font-medium">
-          © {new Date().getFullYear()} Sayee Deshmukh. Designed & Built with ❤️
+          © {new Date().getFullYear()} Sayee Deshmukh.
         </div>
       </div>
     </section>
