@@ -105,7 +105,35 @@ export const projects = [
       finalUI: "/virtuallabs.png",
       reflections: "This project reflects my belief that technology should simplify learning. It improved my ability to break down complex processes into clear, interactive stages."
     }
+  },
+  {
+  id: "chain-reaction",
+  name: "Chain Reaction",
+  tagline: "Strategic multiplayer chain-reaction board game",
+  description: "A browser-based recreation of the classic Chain Reaction game where players compete to dominate the board through strategic orb placements and cascading explosions.",
+  role: "Frontend Developer",
+  techStack: ["React", "JavaScript", "CSS3", "Game Logic", "Framer Motion"],
+  image: "/chain.png",
+  website: "https://chainreacti0n.netlify.app/",
+  github: "https://github.com/sayeedeshmukh/chain-reaction",
+  caseStudy: {
+    overview: "Chain Reaction is a turn-based strategy game inspired by the popular classic. Players place orbs on a grid and trigger explosive chain reactions to capture neighboring cells and eliminate opponents. The game combines simple rules with deep strategic gameplay.",
+
+    problemStatement: "Most online versions of Chain Reaction focus only on functionality and lack smooth interactions or a polished user experience. I wanted to recreate the game in a way that felt responsive, visually engaging, and enjoyable across devices.",
+
+    research: "Studied the original game's mechanics, critical mass rules, and player elimination system. Explored efficient approaches for handling cascading reactions and maintaining consistent board states during large chain explosions.",
+
+    designDecisions: "Focused on a clean game board, clear player colors, and visual feedback for every move. Animations were designed to make chain reactions feel satisfying while keeping gameplay easy to follow.",
+
+    developmentProcess: "Built the game logic from scratch using React state management. Implemented turn handling, critical mass calculations, recursive chain reactions, player elimination, and win detection while ensuring smooth updates to the UI.",
+
+    challenges: "The biggest challenge was implementing cascading explosions without causing inconsistent board states. Managing recursive chain reactions, ownership transfers, and multiple simultaneous updates required careful planning and testing.",
+
+    finalUI: "/chain.png",
+
+    reflections: "This project strengthened my understanding of algorithmic thinking, state management, and interactive application development. Building a game from scratch taught me how to break complex systems into manageable components while maintaining a seamless user experience."
   }
+}
 ];
 
 export const creativeWorks = [
