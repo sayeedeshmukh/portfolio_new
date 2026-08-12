@@ -69,28 +69,28 @@ export const projects = [
   name: "Chain Reaction",
   tagline: "Strategic multiplayer chain-reaction board game",
   description: "A browser-based recreation of the classic Chain Reaction game where players compete to dominate the board through strategic orb placements and cascading explosions.",
-  role: "Frontend Developer",
+  role: "Game & AI Developer",
   techStack: ["React", "JavaScript", "CSS3", "Game Logic", "Framer Motion"],
   image: "/chain.png",
   website: "https://chainreacti0n.netlify.app/",
   github: "https://github.com/sayeedeshmukh/chain-reaction",
   caseStudy: {
-    overview: "Chain Reaction is a turn-based strategy game inspired by the popular classic. Players place orbs on a grid and trigger explosive chain reactions to capture neighboring cells and eliminate opponents. The game combines simple rules with deep strategic gameplay.",
+  overview: "Chain Reaction is a strategic board game where players compete to control the grid through cascading explosions. Beyond recreating the game mechanics, I developed an AI opponent capable of analyzing the board and making competitive decisions in real time.",
 
-    problemStatement: "Most online versions of Chain Reaction focus only on functionality and lack smooth interactions or a polished user experience. I wanted to recreate the game in a way that felt responsive, visually engaging, and enjoyable across devices.",
+  problemStatement: "While building the game itself was straightforward, creating an AI opponent that could make intelligent decisions was significantly more challenging. The goal was to design a bot that felt strategic rather than random.",
 
-    research: "Studied the original game's mechanics, critical mass rules, and player elimination system. Explored efficient approaches for handling cascading reactions and maintaining consistent board states during large chain explosions.",
+  research: "Studied game trees, heuristic evaluation functions, minimax-based decision making, and board-state analysis techniques. Explored how chain reactions impact future turns and how to quantify board control.",
 
-    designDecisions: "Focused on a clean game board, clear player colors, and visual feedback for every move. Animations were designed to make chain reactions feel satisfying while keeping gameplay easy to follow.",
+  designDecisions: "Instead of choosing random moves, the AI evaluates potential placements, predicts resulting chain reactions, measures territory control, and prioritizes moves that maximize advantage while minimizing risk.",
 
-    developmentProcess: "Built the game logic from scratch using React state management. Implemented turn handling, critical mass calculations, recursive chain reactions, player elimination, and win detection while ensuring smooth updates to the UI.",
+  developmentProcess: "Built the game engine first, followed by an AI decision layer. The bot simulates possible moves, scores resulting board states, and selects the strongest available action. The evaluation considers cell ownership, critical cells, chain-reaction potential, and opponent vulnerability.",
 
-    challenges: "The biggest challenge was implementing cascading explosions without causing inconsistent board states. Managing recursive chain reactions, ownership transfers, and multiple simultaneous updates required careful planning and testing.",
+  challenges: "The largest challenge was balancing intelligence with performance. Simulating every possible future state became computationally expensive, requiring optimization of board evaluation and move-selection strategies.",
 
-    finalUI: "/chain.png",
+  finalUI: "/chainreaction.png",
 
-    reflections: "This project strengthened my understanding of algorithmic thinking, state management, and interactive application development. Building a game from scratch taught me how to break complex systems into manageable components while maintaining a seamless user experience."
-  }
+  reflections: "This project helped me understand how game AI differs from traditional application development. Building a strategic bot strengthened my skills in algorithms, decision-making systems, state evaluation, and AI-driven gameplay."
+}
 },
   {
     id: "type-yatra",
